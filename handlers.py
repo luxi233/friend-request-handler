@@ -97,7 +97,7 @@ async def handle_auto_approve(plugin: "FriendRequestHandlerPlugin", user_id: str
 async def _call_llm(plugin: "FriendRequestHandlerPlugin", prompt: str) -> tuple[bool, str]:
     model_name = (plugin.config.strategy.model_name or "").strip()
     try:
-        kwargs: Dict[str, Any] = {"prompt": prompt, "temperature": 0.3, "max_tokens": 64}
+        kwargs: Dict[str, Any] = {"prompt": prompt, "temperature": 0.3, "max_tokens": 2048}
         if model_name:
             kwargs["model"] = model_name
         result = await plugin.ctx.llm.generate(**kwargs)

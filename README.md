@@ -1,5 +1,11 @@
 # MaiSaka 好友申请处理插件 (Friend Request Handler)
 
+> **本仓库为修复版 fork**（上游：[whitefox20011120/friend-request-handler](https://github.com/whitefox20011120/friend-request-handler)）
+>
+> 修复内容：LLM 审核调用 `max_tokens=64` 过小——推理模型（如 MiniMax-M2.7）的思考
+> token 会耗尽限额，导致正式答案未输出，插件按「回复不含"通过"」默认拒绝所有申请。
+> 已将 `max_tokens` 提升为 2048。
+
 > QQ 好友申请自动化处理插件。它可以将接收到的新好友申请推送到指定的管理员 QQ，并允许管理员直接在私聊中快捷同意或拒绝。
 > 有问题请提issue
 

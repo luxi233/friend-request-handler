@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "version": "1.3.0",
+  "version": "1.3.1",
   "name": "好友申请处理",
   "description": "监听加好友申请，支持手动审批、LLM 智能审核、无条件自动通过三种策略",
   "author": {
@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "urls": {
-    "repository": "https://github.com/whitefox20011120/friend-request-handler"
+    "repository": "https://github.com/luxi233/friend-request-handler"
   },
   "host_application": {
     "min_version": "1.0.0",
